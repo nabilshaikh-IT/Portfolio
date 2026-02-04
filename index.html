@@ -38,7 +38,7 @@
         .hero-section {
             background:
                 linear-gradient(rgba(10, 10, 30, 0.7), rgba(10, 10, 30, 0.7)),
-                url("./Images/bg-img.jpg");
+                url("./Images/img.png");
             /* your image path */
             background-size: cover;
             background-position: center;
@@ -251,9 +251,9 @@
         .pulse-on-hover:hover {
             animation: pulse 1.5s ease-in-out infinite;
         }
-        
 
-        
+
+
         /* Text animations */
         @keyframes colorShift {
 
@@ -363,8 +363,8 @@
                             class="btn-primary bg-[#2D5BFF] text-white px-8 py-3 rounded-lg font-semibold">
                             View Projects
                         </button>
-                        <button
-                            class="btn-secondary bg-[#1A1A2E] text-white px-8 py-3 rounded-lg font-semibold border border-[#2A2A40]">
+                        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" type="button"
+                            class="btn-primary bg-[#2D5BFF] text-white px-8 py-3 rounded-lg font-semibold">
                             Get in Touch
                         </button>
                     </div>
@@ -427,7 +427,7 @@
                         <div
                             class="gradient-bg bg-gradient-to-br from-[#10B981] to-[#2D5BFF] rounded-xl h-48 mb-6 flex items-center justify-center overflow-hidden">
 
-                            <img class="w-full h-half object-cover" src="/Images/c.jpg">
+                            <img class="w-full h-half object-cover" src="/Images/c.png">
 
                         </div>
                         <h3 class="text-2xl font-semibold mb-3">
@@ -460,33 +460,44 @@
                         class="project-card bg-[#0F0F1A] rounded-2xl p-6 border border-[#2A2A40] cursor-pointer reveal stagger-3">
                         <div
                             class="gradient-bg bg-gradient-to-br from-[#F59E0B] to-[#EF4444] rounded-xl h-48 mb-6 flex items-center justify-center overflow-hidden">
+                            <img class="w-full h-half object-cover" src="/Images/todo2.png">
+                         
+
                             <svg class="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor"
                                 viewbox="0 0 24 24">
                                 <path
-                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2You are a helpful assistant.
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                 </path>
                             </svg>
                         </div>
                         <h3 class="text-2xl font-semibold mb-3">
-                            Analytics Dashboard
+                            Task Management Web Application
                         </h3>
                         <p class="text-[#A0A0B8] mb-6">
-                            Comprehensive data visualization platform for business intelligence with custom reporting
-                            and alerts.
+                            A professional task management web app for planning, tracking, and completing daily goals.
+                            Designed with a minimal, user-friendly interface for effortless productivity.
                         </p>
+                        <div class="flex mb-2">
+                            <a class="text-[#2D5BFF] hover:underline hover:opacity-80 transition font-semibold"
+                                href="https://github.com/nabilshaikh-IT/Todo_App"
+                                target="_blank">
+                                🔗 View on GitHub
+                            </a>
+                        </div>
+
                         <div class="flex flex-wrap gap-2">
                             <span
                                 class="px-4 py-1.5 rounded-full bg-[#7C3AED] bg-opacity-20 text-[#7C3AED] text-sm project-tag">
-                                Vue.js
+                                HTML
                             </span>
                             <span
                                 class="px-4 py-1.5 rounded-full bg-[#7C3AED] bg-opacity-20 text-[#7C3AED] text-sm project-tag">
-                                Python
+                                CSS
                             </span>
                             <span
                                 class="px-4 py-1.5 rounded-full bg-[#7C3AED] bg-opacity-20 text-[#7C3AED] text-sm project-tag">
-                                PostgreSQL
+                                JavaScript
                             </span>
                         </div>
                     </article>
