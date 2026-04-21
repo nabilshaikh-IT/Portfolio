@@ -15,7 +15,27 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-        }
+        } 
+        .hero-section {
+    background-image: url("img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Optional overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section > * {
+    position: relative;
+    z-index: 1;
+}
 
         /* Smooth scrolling */
         html {
